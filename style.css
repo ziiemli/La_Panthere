@@ -838,12 +838,12 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: linear-gradient(rgba(253, 122, 62, 0.2), rgba(27, 17, 12, 0.8)), url("img/agence-la-panthere.jpg");
+    background-image: linear-gradient(rgba(253, 122, 62, 0.2), rgba(27, 17, 12, 0.8)), url("img/agence-la-panthere.webp");
     object-fit: cover;
 }
 
 .bg-presentation {
-    background-image: linear-gradient(rgba(37, 19, 10, 0.442), rgb(23, 15, 10)), url("img/image-de-presentation.jpg");
+    background-image: linear-gradient(rgba(37, 19, 10, 0.442), rgb(23, 15, 10)), url("img/image-de-presentation.webp");
     object-fit: cover;
 }
 
