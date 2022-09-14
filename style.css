@@ -7,11 +7,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
 }
+
+
 
 a:hover {
     text-decoration: none;
@@ -156,6 +157,8 @@ a:hover {
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
 }
+
+
 
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
@@ -344,8 +347,9 @@ a:hover {
     border: 0px;
 }
 
-.navbar-toggle:hover {
-    background: transparent!important;
+.navbar-toggle:hover > .icon-bar {
+    background-color: #000000;
+    transform: scale(1.08);
 }
 
 .navbar-toggle .icon-bar {
@@ -405,6 +409,11 @@ a:hover {
     }
     .nav > li a:hover, .nav > li a:hover {
         border-radius: 30px;
+    }
+    .nav-link {
+        border-radius: 30px;
+        transition: 0.3s ease-in-out;
+        margin-left: 5px;
     }
 }
 
@@ -542,12 +551,15 @@ a[data-lightbox] {
 }
 
 a[data-lightbox]:hover::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
     width: 50px;
     height: 50px;
-    margin-left: -25px;
+    left: 45%;
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
     color: #FFF;
@@ -700,7 +712,7 @@ p {
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -840,7 +852,7 @@ h4 {
 }
 
 footer p {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 #bloc-5-cta h2 {
@@ -886,9 +898,6 @@ footer p {
     .container {
         width: 100%;
     }
-    .b-parallax {
-        background-attachment: scroll;
-    }
     .page-container,
     #hero-bloc {
         overflow-x: hidden;
@@ -909,6 +918,20 @@ footer p {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+}
+
+.form {
+    margin-bottom: 40px!important;
+    margin-left: 20px;
+}
+
+.contact-informations {
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+.form-group label {
+    font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -1064,5 +1087,14 @@ footer p {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+    #form_1 {
+        padding: 0 20px;
+    }
+    .form {
+        margin-left: 25px;
+    }
+    .contact-informations {
+        padding-top: 20px;
     }
 }
