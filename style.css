@@ -337,7 +337,7 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background-color: #DF6831;
+    background-color: #C75723;
     color: white!important;
 }
 
@@ -791,7 +791,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #DF6831;
+    background-color: #C75723;
 }
 
 .tc-white {
@@ -799,7 +799,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #DF6831;
+    background: #C75723;
     color: #FFFFFF!important;
 }
 
